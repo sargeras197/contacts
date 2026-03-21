@@ -424,7 +424,12 @@ body {
 
 /* Websites Section */
 .websites-section {
-    margin-bottom: 60px;
+    margin-bottom: 70px;
+}
+
+/* Projects Section */
+.projects-section {
+    margin-bottom: 70px;
 }
 
 /* Projects Grid */
