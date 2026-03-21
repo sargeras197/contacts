@@ -179,6 +179,10 @@ body {
     background: linear-gradient(135deg, #24292e, #57606a);
 }
 
+.contact-card.linkedin .icon-wrapper {
+    background: linear-gradient(135deg, #0077b5, #00a0dc);
+}
+
 .contact-info {
     display: flex;
     flex-direction: column;
