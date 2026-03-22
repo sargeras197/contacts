@@ -1,4 +1,42 @@
 // Smooth scroll behavior for all links
+const themeToggle = document.getElementById('themeToggle');
+const savedTheme = localStorage.getItem('theme');
+
+const setTheme = (theme) => {
+    document.body.setAttribute('data-theme', theme);
+
+    if (themeToggle) {
+        const icon = themeToggle.querySelector('i');
+        if (icon) {
+            icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+        }
+
+        themeToggle.setAttribute(
+            'aria-label',
+            theme === 'dark' ? 'Увімкнути світлу тему' : 'Увімкнути темну тему'
+        );
+        themeToggle.setAttribute(
+            'title',
+            theme === 'dark' ? 'Увімкнути світлу тему' : 'Увімкнути темну тему'
+        );
+    }
+};
+
+if (savedTheme === 'dark' || savedTheme === 'light') {
+    setTheme(savedTheme);
+} else {
+    setTheme('light');
+}
+
+if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+        const isDark = document.body.getAttribute('data-theme') === 'dark';
+        const nextTheme = isDark ? 'light' : 'dark';
+        setTheme(nextTheme);
+        localStorage.setItem('theme', nextTheme);
+    });
+}
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
