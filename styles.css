@@ -940,6 +940,10 @@ body[data-theme='dark'] .container {
     background: linear-gradient(135deg, #0077b5, #006fa0);
 }
 
+.social-link.github {
+    background: linear-gradient(135deg, #24292e, #111827);
+}
+
 .social-link.facebook {
     background: linear-gradient(135deg, #1877f2, #0c5fbf);
 }
