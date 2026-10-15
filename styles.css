@@ -61,6 +61,22 @@
     color: #fff;
 }
 
+.service-payment-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.service-payment-link:hover,
+.service-payment-link:focus {
+    text-decoration: underline;
+}
+
 .heart-animate {
     color: #ec4899;
     animation: heartBeat 1.2s infinite;
