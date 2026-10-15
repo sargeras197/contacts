@@ -952,6 +952,10 @@ body[data-theme='dark'] .container {
     background: linear-gradient(135deg, #e1306c, #c13584);
 }
 
+.social-link.tiktok {
+    background: linear-gradient(135deg, #25f4ee, #fe2c55, #111111);
+}
+
 .social-link.youtube {
     background: linear-gradient(135deg, #ff0000, #e60000);
 }
